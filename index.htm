@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+        .cookie {
+            width: 150px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .stats {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .upgrade {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .upgrade:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cookie Clicker Clone</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Chocolate_chip_cookie.png" alt="Cookie" class="cookie" id="cookie">
+    <div class="stats">
+        <p>Cookies: <span id="cookieCount">0</span></p>
+        <p>Cookies per second: <span id="cps">0</span></p>
+    </div>
+    <button class="upgrade" id="autoClicker" disabled>Auto Clicker (Cost: 10 Cookies)</button>
+    <button class="upgrade" id="doubleClick" disabled>Double Click (Cost: 50 Cookies)</button>
+    <script src="script.js"></script>
+</body>
+</html>
